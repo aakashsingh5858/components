@@ -1,11 +1,13 @@
 .navbar{
     display: flex;
     align-items: center;
-    padding: 20px;
+    padding: 16px;
     width: 100%;
     justify-content: center;
+    background-color: var(  --gamboge);
+   
 }
 .navbar_title{
-    color:var(--dark-gold);
+    color: var( --umber);
     font-size: var( --heading-fs);
 }

@@ -13,6 +13,7 @@ border-radius: 4px 4px 0 0;
 }
 .accrodion_content{
     padding: 1rem;
+    transition: all 0.4s ;
 }
 .accordion_title{
     font-size: 1.2rem;
