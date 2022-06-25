@@ -1,0 +1,11 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    justify-content: center;
+}
+.navbar_title{
+    color:var(--dark-gold);
+    font-size: var( --heading-fs);
+}
