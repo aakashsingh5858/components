@@ -19,6 +19,27 @@
 .sidebar_list{
     display: flex;
     align-items: center;
+    flex-direction: column;
     justify-content: center;
     list-style: none;
+    padding-top: 16px;
 }
+.sidebar_list_item{
+    font-size: 1.1rem;
+    color: #fff;
+    font-weight: 400;
+    cursor: pointer;
+    letter-spacing: 1px;
+    padding: 8px;
+}
+.sidebar_list_item:hover{
+    color:var( --tree-green) ;
+}
+
+.closelabel{
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 400;
+    transition: .4s;
+}
+
