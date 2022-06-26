@@ -1,0 +1,24 @@
+.sidebar_wrap{
+    height: 100vh;
+    background-color:var( --dark);
+    position: fixed;
+   transition: .4s;
+}
+
+.sidebar_toggle{
+    width: 2rem;
+    padding: 12px;
+    cursor: pointer;
+}
+
+.sidebar_toggle_block{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.sidebar_list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}

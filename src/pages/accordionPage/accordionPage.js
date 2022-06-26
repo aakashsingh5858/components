@@ -1,10 +1,16 @@
 import React, { useState } from "react";
 import Accordion from "../../components/accordion/Accordion";
+import './accordion.css'
 
-const AccordionPage = () => {
+
+
+const AccordionPage = ({path, ...props}) => {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <div>
+    <div className="accordionPage">
+      <div >
+        <h2 className="accordion_title_block">Accordion Page</h2>
+      </div>
       <Accordion isOpen={isOpen} setIsOpen={setIsOpen}>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
         repudiandae molestias error. Earum debitis excepturi doloribus expedita,

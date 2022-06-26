@@ -26,8 +26,7 @@ export default Accordion;
 const AccordionWrap = styled.div`
   display: flex;
   flex-direction: column;
-  background-color: var(--gamboge);
-  border: 1.5px solid var(--dark-gold);
+  border: 1px solid var( --dark);
   border-radius: 4px;
   transition: all 0.4s ease-in-out;
   ${(props) => `
