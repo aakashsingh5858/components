@@ -1,16 +1,16 @@
 import React, { useState } from "react";
 import Accordion from "../../components/accordion/Accordion";
 import { ClickAwayListener } from "react";
+import { ACCORDION } from "../../constants";
+import PageTitle from "../pageTitle";
 
 const AccordionPage = ({ path, ...props }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const accor = [1, 2, 3, 4, 5];
   return (
-    <div className="accordionPage">
-      <div>
-        <h2 className="accordion_title_block">Accordion Page</h2>
-      </div>
+    <div className="pageContainer">
+     <PageTitle title={ACCORDION} />
       {accor.map((it, i) => {
         return (
           <Accordion key={i} isOpen={isOpen} setIsOpen={setIsOpen} index={i}>

@@ -23,8 +23,8 @@
  }
 
  /* ACCORDION PAGE */
- 
- .accordionPage{
+
+ .pageContainer{
     display: flex;
     align-items: center;
     flex-direction: column;

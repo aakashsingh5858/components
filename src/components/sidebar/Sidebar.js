@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./sidebar.css";
 import DoubleArrowIcon from "../../assets/images/chevrons-right.svg";
 import { Link, useHistory } from "react-router-dom";
-import { ACCORDION, ROUTE_ACCORDION } from "../../constants";
+import { ACCORDION, DROP_DOWN, ROUTE_ACCORDION, ROUTE_DROP_DOWN } from "../../constants";
 
 const Sidebar = ({isOpen, setIsOpen, ...props}) => {
  
@@ -15,6 +15,11 @@ const Sidebar = ({isOpen, setIsOpen, ...props}) => {
       label: ACCORDION,
       closeLabel: "A",
       route: ROUTE_ACCORDION,
+    },
+    {
+      label: DROP_DOWN,
+      closeLabel: "D",
+      route: ROUTE_DROP_DOWN,
     },
   
   ];

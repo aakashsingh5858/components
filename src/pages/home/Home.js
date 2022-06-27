@@ -7,7 +7,8 @@ import {
   Route,
   withRouter,
 } from "react-router-dom";
-import { ROUTE_ACCORDION } from "../../constants";
+import { ROUTE_ACCORDION, ROUTE_DROP_DOWN } from "../../constants";
+import DropDownPage from "../drop-down/dropDownPage";
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,6 +23,9 @@ const Home = () => {
               exact
               path={ROUTE_ACCORDION}
               render={() => <AccordionPage />}
+            />
+            <Route exact path={ROUTE_DROP_DOWN}
+            render = {() => <DropDownPage />}
             />
           </Switch>
           </div>
