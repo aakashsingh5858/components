@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import "./home.css";
 import AccordionPage from "../accordionPage/accordionPage";
@@ -12,11 +12,13 @@ import {
 import { ROUTE_ACCORDION } from "../../constants";
 
 const Home = () => {
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <div>
-      <Sidebar />
-      <div className="main_container">
-        <Router>
+      <Router>
+        <Sidebar isOpen={isOpen} setIsOpen={setIsOpen}/>
+        <div className="main_container " id={isOpen ? "slide_toggle" : ""}>
+          <div className="main_block">
           <Switch>
             <Route
               exact
@@ -24,8 +26,10 @@ const Home = () => {
               render={() => <AccordionPage />}
             />
           </Switch>
-        </Router>
-      </div>
+          </div>
+         
+        </div>
+      </Router>
     </div>
   );
 };

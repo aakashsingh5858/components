@@ -5,5 +5,16 @@
 }
 
 .main_container{
-    margin: 0 15rem;
+    width: calc(100% - 3.4rem);
+    float: right;
+    transition: .4s;
+}
+
+.main_block{
+   margin: 2rem;
+}
+
+#slide_toggle{
+    width: calc(100% - 14rem);
+    transition: .4s;
 }

@@ -36,10 +36,15 @@
     color:var( --tree-green) ;
 }
 
+.sidebar_active{
+    color: var( --tree-green);
+}
+
 .closelabel{
     color: #fff;
     font-size: 1.1rem;
     font-weight: 400;
     transition: .4s;
+    padding: 8px;
 }
 

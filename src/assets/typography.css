@@ -2,4 +2,7 @@
     --heading-fs:2.2rem;
     --subHeading-fs:1.5rem;
     --button-fs:1rem;
+
+    --sidebar-active:'14rem';
+    --sidebar-inactive:'3.4rem'
 }
