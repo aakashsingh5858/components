@@ -8,10 +8,8 @@
     width: calc(100% - 3.4rem);
     float: right;
     transition: .4s;
-}
-
-.main_block{
-   margin: 2rem;
+    background-color: #eee;
+    height: 100vh;
 }
 
 #slide_toggle{

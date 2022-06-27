@@ -53,7 +53,7 @@ const Sidebar = ({isOpen, setIsOpen, ...props}) => {
                   textDecoration: "none",
                 }}
                 onClick={() => {
-                  history.push("/accordion");
+                  history.push(item.route);
                   setActiveClass(i)
                 }}
               >

@@ -3,6 +3,7 @@
     background-color:var( --dark);
     position: fixed;
    transition: .4s;
+   z-index: 999;
 }
 
 .sidebar_toggle{
@@ -43,7 +44,7 @@
 .closelabel{
     color: #fff;
     font-size: 1.1rem;
-    font-weight: 400;
+    font-weight: 600;
     transition: .4s;
     padding: 8px;
 }
