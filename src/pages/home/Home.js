@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-
-import "./home.css";
 import AccordionPage from "../accordionPage/accordionPage";
 import Sidebar from "../../components/sidebar/Sidebar";
 import {

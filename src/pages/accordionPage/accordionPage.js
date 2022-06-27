@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Accordion from "../../components/accordion/Accordion";
-import "./accordion.css";
 import { ClickAwayListener } from "react";
 
 const AccordionPage = ({ path, ...props }) => {
