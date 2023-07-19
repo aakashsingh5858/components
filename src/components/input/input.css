@@ -1,3 +1,25 @@
+input[type="email"],
+input[type="password"],
 input[type="text"] {
   width: 100%;
+  padding: var(--tight-spacing);
+  border: 1px solid var(--grey);
+  border-radius: 4px;
+  outline: none;
+  box-sizing: border-box;
+}
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="text"]:focus {
+  border: 1px solid var(--dark);
+}
+
+.inputLabel {
+  display: block;
+  padding-bottom: var(--extra-tight-spacing);
+  font-size: var(--body-fs);
+  line-height: var(--body-lh);
+  font-weight: var(--body-fw);
+  text-transform: capitalize;
+  cursor: pointer;
 }

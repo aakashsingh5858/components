@@ -1,5 +1,7 @@
 import "./App.css";
 import Routers from "./routes/Routers";
+import "./assets/css/globalStyle.css";
+
 
 function App() {
   return (
