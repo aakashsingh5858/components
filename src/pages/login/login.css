@@ -1,0 +1,23 @@
+.loginContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loginBackGround {
+  width: 50%;
+  height: 100vh;
+}
+.backGround-img {
+  width: 100%;
+  height: inherit;
+  object-fit: cover;
+}
+.formFieldWrap {
+  width: 50%;
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+.inputSector {
+  width: 100%;
+}
