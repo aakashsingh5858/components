@@ -1,8 +1,10 @@
 import React from "react";
 import "./loader.css";
+import { useSelector } from "react-redux";
 
 const Loader = () => {
-  return (
+  const loading = useSelector((state) => state?.loadingState?.loading);
+  return loading ? (
     <div className="loaderContainer">
       <section className="section--white ">
         <div className="loader--spinner">
@@ -21,6 +23,8 @@ const Loader = () => {
         </div>
       </section>
     </div>
+  ) : (
+    <span />
   );
 };
 

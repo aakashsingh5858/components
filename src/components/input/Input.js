@@ -5,6 +5,7 @@ const Input = ({
   label = "label",
   type = "text",
   placeholder = "Enter Value...",
+  onChange,
 }) => {
   const inputRef = useRef(null);
 
@@ -16,7 +17,12 @@ const Input = ({
       <label className="inputLabel" onClick={handleClick}>
         {label}
       </label>
-      <input ref={inputRef} type={type} placeholder={placeholder} />
+      <input
+        ref={inputRef}
+        type={type}
+        placeholder={placeholder}
+        onChange={onChange}
+      />
     </div>
   );
 };
