@@ -6,6 +6,7 @@ const Input = ({
   type = "text",
   placeholder = "Enter Value...",
   onChange,
+  ...props
 }) => {
   const inputRef = useRef(null);
 
@@ -22,6 +23,7 @@ const Input = ({
         type={type}
         placeholder={placeholder}
         onChange={onChange}
+        {...props}
       />
     </div>
   );

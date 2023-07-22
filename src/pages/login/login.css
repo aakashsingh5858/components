@@ -42,5 +42,11 @@
 }
 .submitBtn {
   width: 100%;
-  margin-top: var( --extra-tight-spacing);
+  margin-top: var(--extra-tight-spacing);
+}
+.loginInputError {
+  color: red;
+  font-size: var(--s-screen-caption-fs);
+  display: block;
+  padding-top: 2px;
 }

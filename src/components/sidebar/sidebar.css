@@ -1,0 +1,17 @@
+.sidebarContainer {
+  height: 100%;
+  width: var(--sidebar-inactive);
+  background-color: var(--indigo-blue);
+  position: fixed;
+  transition: width 0.5s;
+}
+.isOpen {
+  width: var(--sidebar-active);
+  transition: width 0.5s;
+}
+
+.sidebartrigger {
+  padding: var(--tight-spacing);
+  display: flex;
+  align-items: center;
+}
