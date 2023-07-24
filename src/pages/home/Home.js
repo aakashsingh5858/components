@@ -2,20 +2,33 @@ import React, { useState } from "react";
 import TipCalculator from "../../components/tip-calculator/TipCalculator";
 import Modal from "../../components/modal/Modal";
 import AvtarCard from "../../components/card/AvtarCard/AvtarCard";
+import AgeCalculator from "../../components/age-calculator/AgeCalculator";
 
 const Home = () => {
   const [openModal, setOpenModal] = useState(false);
+  const [openProject, setOpenProject] = useState(null);
 
   const projectList = [
     {
       label: "tip calculator",
       projectComponent: <TipCalculator />,
     },
+    {
+      label: "Age calculator",
+      projectComponent: <AgeCalculator />,
+    },
   ];
+
+  const handleOpenModal = (list) => {
+    setOpenProject(list.projectComponent);
+    if (openProject) {
+      setOpenModal(true);
+    }
+  };
 
   const renderCard = (list, index) => {
     return (
-      <div onClick={() => setOpenModal(true)}>
+      <div onClick={() => handleOpenModal(list)}>
         <AvtarCard name={list.label} index={index} />
         <span
           style={{
@@ -40,19 +53,14 @@ const Home = () => {
         display: "flex",
         gap: "1rem",
         flexWrap: "wrap",
-        justifyContent: "space-between",
       }}
     >
       {projectList.map((list, index) => {
-        return (
-          <div>
-            {renderCard(list, index)}
-            <Modal isOpen={openModal} setIsClose={setOpenModal}>
-              {list.projectComponent}
-            </Modal>
-          </div>
-        );
+        return <div>{renderCard(list, index)}</div>;
       })}
+      <Modal isOpen={openModal} setIsClose={setOpenModal}>
+        {openProject}
+      </Modal>
     </div>
   );
 };
