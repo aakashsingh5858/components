@@ -1,2 +1,9 @@
 @import "./color-palettes.css";
 @import "./typography.css";
+
+.errorSpan {
+  font-size: var(--caption-fs);
+  font-weight: var(--caption-fw);
+  color: red;
+  display: block;
+}

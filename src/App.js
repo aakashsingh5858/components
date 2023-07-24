@@ -10,14 +10,14 @@ import ROUTES from "./routes/Contstants";
 function App() {
   const location = useLocation();
   const { pathname } = location;
-  const expand = useSelector((state) => state?.sideBar?.isOpen);
+  const sidebarExpand = useSelector((state) => state?.sideBar?.isOpen);
   return (
     <div className="App">
       {pathname !== ROUTES.LOGIN && <Sidebar />}
 
       <div
         style={{
-          marginLeft: expand
+          marginLeft: sidebarExpand
             ? "var( --sidebar-active)"
             : "var(--sidebar-inactive)",
           transition: ".5s",

@@ -1,10 +1,10 @@
 import React from "react";
-import Sidebar from "../../components/sidebar/Sidebar";
+import TipCalculator from "../../components/tip-calculator/TipCalculator";
 
 const Home = () => {
   return (
-    <div>
-      skhfshb
+    <div style={{ margin: "2rem" }}>
+      <TipCalculator />
     </div>
   );
 };

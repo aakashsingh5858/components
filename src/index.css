@@ -5,4 +5,5 @@
 body {
   font-family: "Inter";
   transition: 0.5s ease-in-out;
+  background-color: var(--for-bg-grey);
 }

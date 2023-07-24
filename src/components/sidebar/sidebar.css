@@ -4,6 +4,8 @@
   background-color: var(--indigo-blue);
   position: fixed;
   transition: width 0.5s;
+  top: 0;
+  left: 0;
 }
 
 .isOpen {

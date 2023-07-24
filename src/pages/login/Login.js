@@ -29,7 +29,9 @@ const Login = () => {
       dispatch(loadingAction(true));
       setTimeout(() => {
         if (
-          loginValue.email === "components123@gmail.com" || loginValue.password === 123 ) {
+          loginValue.email === "components123@gmail.com" ||
+          loginValue.password === 123
+        ) {
           navigate(ROUTES.HOME);
           dispatch(loadingAction(false));
         }

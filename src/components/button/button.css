@@ -13,6 +13,10 @@
   cursor: pointer;
 }
 
+.green {
+  background-color: var(--tree);
+}
+
 .button:active {
   opacity: 0.8;
 }
