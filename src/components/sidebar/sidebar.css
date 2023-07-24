@@ -5,6 +5,7 @@
   position: fixed;
   transition: width 0.5s;
 }
+
 .isOpen {
   width: var(--sidebar-active);
   transition: width 0.5s;
