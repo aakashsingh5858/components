@@ -7,6 +7,7 @@ const Input = ({
   placeholder = "Enter Value...",
   onChange,
   min,
+  max,
   value,
   ...props
 }) => {
@@ -26,6 +27,7 @@ const Input = ({
         placeholder={placeholder}
         onChange={onChange}
         min={min}
+        max={max}
         {...props}
         value={value}
       />
