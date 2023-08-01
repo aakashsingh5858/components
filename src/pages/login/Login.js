@@ -7,8 +7,8 @@ import Button from "../../components/button/Button";
 import { useNavigate } from "react-router-dom";
 import ROUTES from "../../routes/Contstants";
 import { useDispatch } from "react-redux";
-import { loadingAction } from "../../store/loader";
 import cloneDeep from "lodash.clonedeep";
+import { activeLoader } from "../../redux/action/loaderAction";
 
 const Login = () => {
   const navigate = useNavigate(null);
@@ -26,14 +26,14 @@ const Login = () => {
 
   const handleSubmit = () => {
     if (validateField()) {
-      dispatch(loadingAction(true));
+      dispatch(activeLoader(true));
       setTimeout(() => {
         if (
           loginValue.email === "components123@gmail.com" ||
           loginValue.password === 123
         ) {
           navigate(ROUTES.HOME);
-          dispatch(loadingAction(false));
+          dispatch(activeLoader(false));
         }
       }, 500);
     }

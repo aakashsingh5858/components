@@ -4,7 +4,7 @@ import Input from "../input/Input";
 import Button from "../button/Button";
 import cloneDeep from "lodash.clonedeep";
 import { useDispatch } from "react-redux";
-import { loadingAction } from "../../store/loader";
+import { activeLoader } from "../../redux/action/loaderAction";
 
 const TipCalculator = () => {
   const [getValue, setValue] = useState({
@@ -22,18 +22,18 @@ const TipCalculator = () => {
 
   const calculateValue = () => {
     if (validateField()) {
-      dispatch(loadingAction(true));
+      dispatch(activeLoader(true));
       setTimeout(() => {
         const billvalue = getValue.bill;
         const tipValue = getValue.tip;
         const totalValue = billvalue * (1 + tipValue / 100);
         const fixedValue = totalValue.toFixed(2);
         setTotalValue(fixedValue);
-        dispatch(loadingAction(false));
-        // setValue({
-        //   bill: "",
-        //   tip: "",
-        // });
+        dispatch(activeLoader(false));
+        setValue({
+          bill: "",
+          tip: "",
+        });
       }, 500);
     }
   };

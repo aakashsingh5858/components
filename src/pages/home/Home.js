@@ -56,7 +56,7 @@ const Home = () => {
       }}
     >
       {projectList.map((list, index) => {
-        return <div>{renderCard(list, index)}</div>;
+        return <div key={index}>{renderCard(list, index)}</div>;
       })}
       <Modal isOpen={openModal} setIsClose={setOpenModal}>
         {openProject}

@@ -6,11 +6,12 @@ import Sidebar from "./components/sidebar/Sidebar";
 import { useSelector } from "react-redux";
 import { useLocation } from "react-router-dom";
 import ROUTES from "./routes/Contstants";
+import { sideBarReducer } from "./redux/reducers/sidebarReducer";
 
 function App() {
   const location = useLocation();
   const { pathname } = location;
-  const sidebarExpand = useSelector((state) => state?.sideBar?.isOpen);
+  const sidebarExpand = useSelector((state) => state?.sideBarReducer);
   return (
     <div className="App">
       {pathname !== ROUTES.LOGIN && <Sidebar />}
