@@ -1,4 +1,4 @@
-import { LOADER } from "../ReduxConstands";
+import { LOADER } from "../ReduxConstants";
 
 export const loaderState = (state = false, action) => {
   switch (action.type) {

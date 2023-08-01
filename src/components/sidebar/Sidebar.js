@@ -11,7 +11,6 @@ import { activeSideBar } from "../../redux/action/sidebarAction";
 const Sidebar = () => {
   const dispatch = useDispatch();
   const expand = useSelector((state) => state.sideBarReducer);
-  console.log(expand, "expand");
   const navigate = useNavigate();
   const list = [
     {

@@ -1,4 +1,4 @@
-import { SIBEBAR } from "../ReduxConstands";
+import { SIBEBAR } from "../ReduxConstants";
 
 export const activeSideBar = (payload) => {
   return {

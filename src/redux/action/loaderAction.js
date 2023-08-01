@@ -1,4 +1,4 @@
-import { LOADER } from "../ReduxConstands";
+import { LOADER } from "../ReduxConstants";
 
 export const activeLoader = (payload) => {
   return {

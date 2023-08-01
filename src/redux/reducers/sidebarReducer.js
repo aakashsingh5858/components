@@ -1,4 +1,4 @@
-import { SIBEBAR } from "../ReduxConstands";
+import { SIBEBAR } from "../ReduxConstants";
 
 export const sideBarReducer = (state = false, action) => {
   switch (action.type) {

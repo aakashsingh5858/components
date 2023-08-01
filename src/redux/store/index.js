@@ -1,14 +1,14 @@
 import { configureStore } from "@reduxjs/toolkit";
 import rootReducer from "../reducers";
-// import createSagaMiddleware from "redux-saga";
-// import { getRecipeBook } from "../services";
+import createSagaMiddleware from "redux-saga";
+import getRecipeBookData from "../services";
 
-// const sagaMiddleware = createSagaMiddleware();
+const sagaMiddleware = createSagaMiddleware();
 
 const store = configureStore({
   reducer: rootReducer,
-  // middleware: () => [sagaMiddleware],
+  middleware: () => [sagaMiddleware],
 });
-// sagaMiddleware.run(getRecipeBook);
+sagaMiddleware.run(getRecipeBookData);
 
 export default store;
