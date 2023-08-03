@@ -4,26 +4,18 @@ import axios from "axios";
 import store from "./store/index";
 import { activeLoader } from "./action/loaderAction";
 
-const options = {
-  method: "GET",
-  url: "https://pizza-and-desserts.p.rapidapi.com/pizzas/1",
-  headers: {
-    "X-RapidAPI-Key": "cbaf900aefmsh2b3b5742aec832ap134af6jsn110ff5c4b7bc",
-    "X-RapidAPI-Host": "pizza-and-desserts.p.rapidapi.com",
-  },
-};
-
-const baseUrl = "https://pizza-and-desserts.p.rapidapi.com/pizzas";
+const API_KEY = "275d58779ccf4e22af03e792e8819fff";
 
 function* getRecipeData() {
   console.log("call api");
   store.dispatch(activeLoader(true));
   try {
-    let res = yield axios.request(baseUrl, options);
-    console.log(res, "res");
+    let res = yield axios.get(
+      `https://api.spoonacular.com/recipes/random?number=10&apiKey=${API_KEY}`
+    );
     if (res.status === 200) {
       store.dispatch(activeLoader(false));
-      yield put({ type: SET_RECIPE_BOOK_LIST, data: res.data });
+      yield put({ type: SET_RECIPE_BOOK_LIST, data: res?.data?.recipes });
     }
   } catch (err) {
     return err.response;

@@ -1,0 +1,88 @@
+.recipeBookingContainer {
+  /* margin: 3rem; */
+  display: flex;
+  flex-wrap: wrap;
+}
+.cardWrapper {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  flex-wrap: wrap;
+  margin: 1rem;
+}
+.cardContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  box-shadow: #6363634d 0px 2px 10px -2px;
+  /* background-color: var(--light-sky); */
+  padding: var(--base-tight-spacing);
+}
+.cardTitleWrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+}
+.forintruction {
+  width: 75%;
+}
+.cardImgWrap {
+  object-fit: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mainImage {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  float: left;
+}
+.cardTitle {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: var(--base-tight-spacing);
+}
+.cardTitle h1 {
+  font-size: var(--heading-fs);
+  font-weight: 700;
+  color: var(--indigo-blue);
+}
+.cardSummary {
+  padding-top: var(--base-tight-spacing);
+}
+.cardSummary p {
+  font-size: var(--s-screen-caption-fs);
+  text-align: justify;
+  font-weight: 300;
+}
+.cardSummary p strong {
+  font-size: var(--s-screen-subHeading-fs);
+}
+.forintruction {
+  display: flex;
+}
+.cardIntruction {
+  width: 35%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: var(--base-tight-spacing);
+}
+.cardDishName{
+  text-transform: capitalize;
+  font-size: var(--s-screen-caption-fs);
+}
+.viewRecipeWrap{
+  margin-top: var(--base-tight-spacing);
+}
+.instructionWrap{
+  padding: var(--base-tight-spacing);
+}
