@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./sidebar.css";
 import { BsChevronDoubleRight } from "react-icons/bs";
 import { useDispatch, useSelector } from "react-redux";
-import { FcTodoList } from "react-icons/fc";
+import { FcSearch, FcTodoList } from "react-icons/fc";
 import { FcHome } from "react-icons/fc";
 import ROUTES from "../../routes/Contstants";
 import { useNavigate } from "react-router-dom";
@@ -22,6 +22,11 @@ const Sidebar = () => {
       label: "recipe book app",
       icon: <FcTodoList size="1.5rem" />,
       route: ROUTES.BOOK_APP,
+    },
+    {
+      label: "Search Image",
+      icon: <FcSearch size="1.5rem" />,
+      route: ROUTES.SEARCH_IMAGE,
     },
   ];
   return (

@@ -1,0 +1,22 @@
+.searchContainer {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+}
+.searchContainer h1 {
+  font-size: var(--pageHeading-fs);
+  text-transform: capitalize;
+  font-weight: 700;
+  margin: 3rem 0;
+}
+.search-feildBlock {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  width: 100%;
+}
+.searchInput {
+  width: 50%;
+}

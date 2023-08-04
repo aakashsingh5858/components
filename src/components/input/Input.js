@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import "./input.css";
 
 const Input = ({
-  label = "label",
+  label,
   type = "text",
   placeholder = "Enter Value...",
   onChange,
