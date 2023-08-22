@@ -1,22 +1,40 @@
 .searchContainer {
-  display: flex;
-  align-items: center;
   width: 100%;
-  justify-content: center;
-  flex-direction: column;
 }
 .searchContainer h1 {
   font-size: var(--pageHeading-fs);
   text-transform: capitalize;
   font-weight: 700;
   margin: 3rem 0;
+  text-align: center;
 }
 .search-feildBlock {
   display: flex;
   align-items: baseline;
   justify-content: center;
   width: 100%;
+  margin-bottom: 1rem;
 }
 .searchInput {
   width: 50%;
+}
+.imageResultWraper {
+  width: 1000px;
+  margin: 20px auto;
+  columns: 4;
+  column-gap: 4px;
+}
+.imageResultWraper .imagesWrapper {
+  width: 100%;
+}
+
+.imagesWrapper img {
+  max-width: 100%;
+  height: auto;
+}
+.showMoreBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
 }
