@@ -1,0 +1,41 @@
+.todoMainContainer {
+  margin: 1rem;
+  margin-left: 3rem;
+}
+.todo_addBtn {
+  margin-bottom: 2rem;
+}
+.todo_main {
+  width: 350px;
+  box-shadow: #6363634d 0px 2px 12px 0px;
+  margin-top: 1rem;
+}
+.todo_tool {
+  width: 100%;
+  background-color: #56bfdc;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.todo_textarea {
+  width: 350px;
+  height: 450px;
+}
+.todo_textarea textarea {
+  width: 95%;
+  height: 100%;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  border: none;
+  resize: none;
+  outline: none;
+  background-color: #d4f6ff;
+}
+.todoWrapper {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  /* justify-content: space-between; */
+  flex-wrap: wrap;
+}

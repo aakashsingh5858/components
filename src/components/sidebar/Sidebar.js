@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./sidebar.css";
 import { BsChevronDoubleRight } from "react-icons/bs";
 import { useDispatch, useSelector } from "react-redux";
-import { FcRefresh, FcSearch, FcTodoList } from "react-icons/fc";
+import { FcRefresh, FcSearch, FcSurvey, FcTodoList } from "react-icons/fc";
 import { FcHome } from "react-icons/fc";
 import ROUTES from "../../routes/Contstants";
 import { useNavigate } from "react-router-dom";
@@ -19,7 +19,7 @@ const Sidebar = () => {
       route: ROUTES.HOME,
     },
     {
-      label: "recipe book app",
+      label: "recipe app",
       icon: <FcTodoList size="1.5rem" />,
       route: ROUTES.BOOK_APP,
     },
@@ -29,9 +29,14 @@ const Sidebar = () => {
       route: ROUTES.SEARCH_IMAGE,
     },
     {
-      label: "Image Slides",
+      label: "image slides",
       icon: <FcRefresh size="1.5rem" />,
       route: ROUTES.SLIDE,
+    },
+    {
+      label: "todo notes",
+      icon: <FcSurvey size="1.5rem" />,
+      route: ROUTES.TODO_NOTES,
     },
   ];
   return (

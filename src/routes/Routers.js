@@ -10,6 +10,7 @@ const RecipeBookingApp = lazy(() =>
 );
 const SearchImage = lazy(() => import("../pages/image-search-app/SearchImage"));
 const Slider = lazy(() => import("../pages/custom-slider/Slider"));
+const TodoNotes = lazy(() => import("../components/todo-notes/TodoNotes"));
 
 const Routers = () => {
   return (
@@ -20,6 +21,7 @@ const Routers = () => {
         <Route exact path={ROUTES.BOOK_APP} element={<RecipeBookingApp />} />
         <Route exact path={ROUTES.SEARCH_IMAGE} element={<SearchImage />} />
         <Route exact path={ROUTES.SLIDE} element={<Slider />} />
+        <Route exact path={ROUTES.TODO_NOTES} element={<TodoNotes />} />
       </Routes>
     </Suspense>
   );

@@ -1,6 +1,6 @@
 import { SIBEBAR } from "../ReduxConstants";
 
-export const sideBarReducer = (state = false, action) => {
+export const sideBarReducer = (state = true, action) => {
   switch (action.type) {
     case SIBEBAR:
       return action.payload;
